@@ -83,4 +83,8 @@ public class SaleDTO {
 		this.seller = seller;
 	}
 	
+<<<<<<< HEAD
+=======
+
+>>>>>>> b57c5903673be48bfee6a16e04c6cb32bf588bd1
 }
