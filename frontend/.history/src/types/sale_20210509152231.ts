@@ -5,6 +5,6 @@ export type SaleSum = {
 
 export type SaleSucess = {
     sellerName: string;
-    visited: number;
+    visted: number;
     deals: number;
 }
