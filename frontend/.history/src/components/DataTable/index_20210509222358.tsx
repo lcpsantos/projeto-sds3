@@ -6,7 +6,7 @@ import { formatLocalDate } from "utils/format";
 import { BASE_URL } from "utils/requests";
 
 const DataTable = () => {
-  const [activePage, setActivePage] = useState(0);
+  //const [activePage, setActivePage] = useState(0);
   const [page, setPage] = useState<SalePage>({
     first: true,
     last: true,
@@ -17,19 +17,15 @@ const DataTable = () => {
 
   useEffect(() => {
     axios
-      .get(`${BASE_URL}/sales?page=${activePage}&size=10&sort=date,desc`)
+      .get(`${BASE_URL}/sales?page=9&size=10&sort=date,desc`)
       .then((response) => {
         setPage(response.data);
       });
-  }, [activePage]);
-
-  const changePage = (index: number) => {
-    setActivePage(index);
-  };
+  }, []);
 
   return (
     <>
-      <Pagination page={page} onPageChange={changePage} />
+    <Pagination page={page}/>
       <div className="table-responsive">
         <table className="table table-striped table-sm">
           <thead>
