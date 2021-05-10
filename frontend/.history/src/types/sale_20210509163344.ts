@@ -5,7 +5,7 @@ export type Sale = {
     visited: number;
     deals: number;
     amount: number;
-    date: string;
+    data: string;
     seller: Seller;
 }
 
@@ -14,7 +14,7 @@ export type SalePage = {
     last: boolean;
     totalElements: number;
     totalPages: number;
-    size?: number;
+    size: number;
     number: number;
     first: boolean;
     numberOfElements?: number;

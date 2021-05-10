@@ -5,20 +5,20 @@ export type Sale = {
     visited: number;
     deals: number;
     amount: number;
-    date: string;
+    data: string;
     seller: Seller;
 }
 
 export type SalePage = {
-    content?: Sale[];
+    content: Sale[];
     last: boolean;
     totalElements: number;
     totalPages: number;
-    size?: number;
+    size: number;
     number: number;
     first: boolean;
-    numberOfElements?: number;
-    empty?: boolean;
+    numberOfElements: number;
+    empty: boolean;
 }
 
 export type SaleSum = {
