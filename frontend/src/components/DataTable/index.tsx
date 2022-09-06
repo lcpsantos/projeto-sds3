@@ -39,6 +39,7 @@ const DataTable = () => {
               <th>Clientes visitados</th>
               <th>Negócios fechados</th>
               <th>Valor</th>
+              <th>Ultima atualização</th>
             </tr>
           </thead>
           <tbody>
@@ -49,6 +50,7 @@ const DataTable = () => {
                 <td>{item.visited}</td>
                 <td>{item.deals}</td>
                 <td>{item.amount.toFixed(2)}</td>
+                <td>{item.log_now}</td>
               </tr>
             ))}
           </tbody>

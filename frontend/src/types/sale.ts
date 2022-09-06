@@ -7,6 +7,7 @@ export type Sale = {
     amount: number;
     date: string;
     seller: Seller;
+    log_now: string;
 }
 
 export type SalePage = {
