@@ -34,8 +34,9 @@ public class SaleDTO {
 		deals = entity.getDeals();
 		amount = entity.getAmount();
 		date = entity.getDate();
+		log_now = entity.getLogNow();
 		seller = new SellerDTO(entity.getSeller());
-		log_now = 
+		
 	}
 
 	public Long getId() {
@@ -71,6 +72,10 @@ public class SaleDTO {
 	}
 
 	public LocalDate getDate() {
+		return date;
+	}
+
+	public LocalDate getLogNow() {
 		return date;
 	}
 
